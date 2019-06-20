@@ -1,0 +1,118 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Test item title 1",
+      "color": "#ff3333",
+      "price": 120000
+    },
+    {
+      "id": 2,
+      "title": "Test item title 2",
+      "color": "#0065D9",
+      "price": 120000
+    },
+    {
+      "id": 3,
+      "title": "Test item title 3",
+      "color": "#00B341",
+      "price": 120000
+    },
+    {
+      "id": 4,
+      "title": "Test item title 4",
+      "color": "#ff3333",
+      "price": 120000
+    },
+    {
+      "id": 5,
+      "title": "Test item title 5",
+      "color": "black",
+      "price": 120000
+    },
+    {
+      "id": 6,
+      "title": "Test item title 6",
+      "color": "white",
+      "price": 120000
+    },
+    {
+      "id": 7,
+      "title": "Test item title 7",
+      "color": "#0065D9",
+      "price": 120000
+    },
+    {
+      "id": 8,
+      "title": "Test item title 8",
+      "color": "#0065D9",
+      "price": 120000
+    },
+    {
+      "id": 9,
+      "title": "Test item title 9",
+      "color": "#CCCCCC",
+      "price": 120000
+    },
+    {
+      "id": 10,
+      "title": "Test item title 10",
+      "color": "#0065D9",
+      "price": 120000
+    },
+    {
+      "id": 11,
+      "title": "Test item title 11",
+      "color": "#CCCCCC",
+      "price": 120000
+    },
+    {
+      "id": 12,
+      "title": "Test item title 12",
+      "color": "#CCCCCC",
+      "price": 120000
+    },
+    {
+      "id": 13,
+      "title": "Test item title 13",
+      "color": "#EBA704",
+      "price": 120000
+    },
+    {
+      "id": 14,
+      "title": "Test item title 14",
+      "color": "#EBA704",
+      "price": 120000
+    },
+    {
+      "id": 15,
+      "title": "Test long item title 15",
+      "color": "#0065D9",
+      "price": 120000
+    },
+    {
+      "id": 16,
+      "title": "Test item title 16",
+      "color": "#00B341",
+      "price": 120000
+    },
+    {
+      "id": 17,
+      "title": "Test item title 17",
+      "color": "#0065D9",
+      "price": 120000
+    },
+    {
+      "id": 18,
+      "title": "Test item title 18",
+      "color": "#CCCCCC",
+      "price": 120000
+    },
+    {
+      "id": 19,
+      "title": "Test item title 19",
+      "color": "#CCCCCC",
+      "price": 120000
+    }
+  ]
+}
