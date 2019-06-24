@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Text, View, Button, ActivityIndicator, ScrollView } from 'react-native';
-import { connect } from 'react-redux';
+import { Text, View, ActivityIndicator } from 'react-native';
 
 import ItemsList from '../ItemsList/ItemsList';
 import styles from './styles';
 
-class HomeScreen extends Component {
+export default class HomeScreen extends Component {
   static navigationOptions() {
     return {
       headerTitle: <Text style={ styles.mainTitle }>Items:</Text>,
@@ -13,33 +12,30 @@ class HomeScreen extends Component {
     };
   };
 
-  onPressItemHandler(id) {
+  handleSelectItem = (id) => {
     this.props.navigation.navigate('Item', {
       item: this.props.items.find(item => item.id === id)
     });
   }
 
-  render() {
-    if (this.props.showSpinner) {
-      return <View style={ styles.container }>
+  renderLoadingState() {
+    return (
+      <View style={ styles.container }>
         <ActivityIndicator size="large" color="#5FCEF9" />
         <Text style={ styles.mainTitle }>Load basic data...</Text>
       </View>
+    );
+  }
+
+  render() {
+    if (this.props.showSpinner) {
+      return this.renderLoadingState();
     }
 
     return (
       <View style={ styles.container }>
-        <ItemsList items={ this.props.items } onPressHandler={ (id) => this.onPressItemHandler(id) } />
+        <ItemsList items={ this.props.items } selectItem={ this.handleSelectItem } />
       </View>
     );
   }
 }
-
-const mapStateToProps = state => {
-  return {
-    items: state.test.items,
-    showSpinner: state.test.isFetching
-  }
-}
-
-export default connect(mapStateToProps)(HomeScreen);

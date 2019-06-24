@@ -5,6 +5,7 @@ export default styles = StyleSheet.create({
     flex: 1,
     flexDirection:'row',
     flexWrap: 'wrap',
+    marginBottom: 10
   },
   item: {
     fontSize: 16,

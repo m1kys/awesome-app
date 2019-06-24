@@ -1,5 +1,5 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
-import HomeScreen from '../components/HomeScreen/HomeScreen';
+import HomeScreen from '../components/HomeScreen/container';
 import ItemScreen from '../components/ItemScreen/ItemScreen';
 
 const AppNavigator = createStackNavigator(

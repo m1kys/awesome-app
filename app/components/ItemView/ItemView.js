@@ -3,16 +3,22 @@ import { Text, View, Button } from 'react-native';
 import styles from './styles';
 
 export default class ItemScreen extends Component {
-  render() {
-    const item = this.props.item;
-    if (!item) {
-      return <View style={styles.container}>
+  renderError() {
+    return (
+      <View style={styles.container}>
         <Text style={styles.title}>Sorry, something went wrong...</Text>
         <Button
           title="Go to Home"
           onPress={() => this.props.pressBackHandler()}
         />
       </View>
+    );
+  }
+
+  render() {
+    const item = this.props.item;
+    if (!item) {
+      return this.renderError();
     }
   
     const itemStyle = Object.assign({}, styles.block, { backgroundColor: item.color || styles.block.backgroundColor });

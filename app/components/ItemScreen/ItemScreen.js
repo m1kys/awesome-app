@@ -6,7 +6,7 @@ export default class ItemScreen extends Component {
     header: null
   };
 
-  pressBackHandler() {
+  handlerOnPressBack = () => {
     this.props.navigation.navigate('Home');
   }
 
@@ -14,7 +14,7 @@ export default class ItemScreen extends Component {
     return (
       <ItemView 
         item={ this.props.navigation.getParam('item', null) } 
-        pressBackHandler={ () => this.pressBackHandler() }
+        pressBackHandler={ this.handlerOnPressBack }
       />
     );
   }
